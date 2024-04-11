@@ -12,7 +12,7 @@
 <body>
 
 <div class="content-area">
-    <img src="nickpic.jpg" alt="Nick Calabro" id="profile-image" class="profile-image">
+    <img src="nickpic.jpg" alt="Nick Calabro" id="profile-image" class="profile-image expanded">
     <h1 class="head-head">Nick Calabro 💰</h1>
     <h2 class="sub-head">Bitcoin • DeFi • Growth</h2>
 
@@ -53,14 +53,6 @@
 <script>
 document.getElementById('profile-image').onclick = function() {
     this.classList.toggle('expanded');
-
-    document.getElementById('profile-image').addEventListener('click', function() {
-    this.classList.toggle('expanded');
-});
-document.getElementById('profile-image').addEventListener('touchstart', function(event) {
-    this.classList.toggle('expanded');
-    event.preventDefault(); // Prevents additional mouse events on touch devices
-});
 
 };
 </script>

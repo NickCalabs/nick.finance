@@ -7,15 +7,18 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
 
 <div class="content-area">
     <img src="nickpic.jpg" alt="Nick Calabro" id="profile-image" class="profile-image">
-    <h1>Nick Calabro 💰</h1>
-    <h2>Bitcoin • DeFi • Growth</h2>
+    <h1 class="head-head">Nick Calabro 💰</h1>
+    <h2 class="sub-head">Bitcoin • DeFi • Growth</h2>
 
+<div style="padding-top: 35px; padding-bottom: 35px;">
     <hr class="separator-line">
+</div>
 
     <p>Accelerating Bitcoin startups with fast, high-signal growth strategies.</p>
     <p>Prev Co-Founder @ <a href="https://deeplake.finance/">Deep Lake</a>—Unlocked native Bitcoin in Smart Contracts through DLCs (BFF '23).</p>
@@ -24,26 +27,41 @@
     <p>Occasionally crashing <a href="https://www.podchaser.com/creators/nick-calabro-107ZzndWDR">podcasts</a>.</p>
     
 
-    <div class="html-arrow">&#x25BC;</div>
+    
+    <div style="text-align: center; padding-top: 85px; padding-bottom: 300px;">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
+
+
+
 </div>
 
 <footer class="footer-area">
     <h3>Nick.finance</h3>
     <ul>
-        <li a href="http://bit.ly/WatchNickCalabs">YouTube</li>
-        <li a href="http://linkedin.com/in/nickcalabro">LinkedIn</li>
-        <li a href="https://github.com/nickcalabs/">Github</li>
-        <li a href="https://www.tiktok.com/@nickcalabs">TikTok</li>
-        <li a href="https://www.facebook.com/nickcalabs">Meta</li>
-        <li a href="https://app.sigle.io/stablesir.btc">Sigle</li>
-        <li a href="https://twitter.com/nickcalabs">X</li>
+        <li> <a href="http://bit.ly/WatchNickCalabs">YouTube</li>
+        <li> <a href="http://linkedin.com/in/nickcalabro">LinkedIn</li>
+        <li> <a href="https://github.com/nickcalabs/">Github</li>
+        <li> <a href="https://www.tiktok.com/@nickcalabs">TikTok</li>
+        <li> <a href="https://www.facebook.com/nickcalabs">Meta</li>
+        <li> <a href="https://app.sigle.io/stablesir.btc">Sigle</li>
+        <li> <a href="https://twitter.com/nickcalabs">X</li>
     </ul>
 </footer>
 
 <script>
-// If you decide to make the image clickable to expand
 document.getElementById('profile-image').onclick = function() {
     this.classList.toggle('expanded');
+
+    document.getElementById('profile-image').addEventListener('click', function() {
+    this.classList.toggle('expanded');
+});
+document.getElementById('profile-image').addEventListener('touchstart', function(event) {
+    this.classList.toggle('expanded');
+    event.preventDefault(); // Prevents additional mouse events on touch devices
+});
+
 };
 </script>
 

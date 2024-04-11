@@ -1,518 +1,191 @@
-/* ".inherited-styles-for-exported-element" is a generated class for the inherited styles of the exported element, feel free to rename it. */
-
+/* Resetting and box sizing */
 *, ::after, ::before {
   box-sizing: border-box;
-}
-
-a {
-  background-color: initial;
-  background-position: 0 0;
-  text-decoration: none;
-}
-
-b {
-  font-weight: 700;
-}
-
-h1 {
-  color: inherit;
-  font-family: inherit;
-  font-weight: 500;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-img {
-  border-style: initial;
-  border-width: 0;
-  vertical-align: middle;
-}
-
-h2, input, textarea {
-  font-family: inherit;
-}
-
-input, textarea {
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  line-height: inherit;
   margin: 0;
+  padding: 0;
 }
 
-textarea {
-  overflow: auto;
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.inherited-styles-for-exported-element {
+/* Body and default styles */
+body {
+  font-family: 'Ubuntu', sans-serif;
   color: #2f2f2f;
-  font-family: "Ubuntu", Helvetica, sans-serif !important;
-  font-size: 14px;
+  font-size: 23px;
   line-height: 1.42857;
 }
 
-h2 {
-  color: inherit;
+/* Spacing for paragraphs */
+p {
+  margin-bottom: 16px; /* Increase spacing, adjust as needed */
+  color: #2f2f2f;
+  cursor: auto;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+
+a {
+  color: inherit; /* Ensures the link color is the same as the surrounding text */
+  text-decoration: underline; /* Underlines the link */
+}
+
+a:hover, a:focus {
+  color: inherit; /* Keeps the color consistent on hover/focus */
+  text-decoration: none; /* Optionally removes the underline on hover/focus for a different effect */
+}
+
+/* Image styling */
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* Headings */
+h1, h2 {
   font-weight: 500;
 }
 
-.container {
-  overflow: hidden;
+h1 {
+  font-size: 32px; /* Adjusted to match your requirements */
 }
 
-.containerWithVisibleOverflow {
-  overflow: visible;
+h2 {
+  font-size: 24px; /* Adjusted to match your requirements */
 }
 
-.containerModal, .modalBackdropWrapper {
-  opacity: 0;
+/* Utility classes */
+.padding-top {
+  padding-top: 10px;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
+.padding-bottom {
+  padding-bottom: 10px;
 }
 
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
+/* Font Awesome Icons */
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+.fa-angle-double-down {
+  content: "\f103"; /* This is the Font Awesome character unicode */
 }
 
-.col-md-1, .col-md-11, .col-md-12, .col-md-6 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 16px; /* Larger font size for mobile if needed */
+  }
+
+  h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+
+  h2 {
+    font-size: 20px; /* Adjusted for mobile */
+  }
 }
 
+/* Responsive margins and paddings */
 @media (min-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
 
-  .col-md-1,   .col-md-11,   .col-md-12,   .col-md-6 {
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  /* Bootstrap-like column styles */
+  .col-md-1 {
+    width: 8.33333%;
+    float: left;
+  }
+
+  .col-md-11 {
+    width: 91.66667%;
     float: left;
   }
 
   .col-md-12 {
     width: 100%;
-  }
-
-  .col-md-11 {
-    width: 91.6667%;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .col-md-1 {
-    width: 8.33333%;
+    float: left;
   }
 }
 
-.containerWrapper {
-  min-width: 320px;
-}
-
-.innerContent {
-  overflow-wrap: break-word;
-}
-
-.wideContainer {
-  max-width: 1120px;
-  width: 100%;
-}
-
-.midContainer {
-  max-width: 720px;
-  width: 100%;
-}
-
-.row {
-  padding: 10px;
-}
-
-.padding10-top {
-  padding-top: 10px;
-}
-
-.padding20-top {
-  padding-top: 20px;
-}
-
-.padding40-top {
-  padding-top: 40px;
-}
-
-.padding10-bottom {
-  padding-bottom: 10px;
-}
-
-.padding20-bottom {
-  padding-bottom: 20px;
-}
-
-.padding40-bottom {
-  padding-bottom: 40px;
-}
-
-.padding40H {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.radius0 {
-  border-radius: 0;
-}
-
-.radius10 {
-  border-radius: 10px;
-}
-
-.radius75 {
-  border-radius: 75px;
-}
-
-.border3px {
-  background-position-y: -3px;
-}
-
-.bgCover {
-  background-position: center center;
-}
-
-.modalBackdropWrapper {
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 222;
-}
-
-.containerModal {
-  left: 50%;
-  position: fixed;
-  top: 0;
-  z-index: 222;
-}
-
-.closeLPModal {
-  cursor: pointer;
-  position: absolute;
-  right: -20px;
-  top: -20px;
-}
-
-.de-editable {
-  position: relative;
-}
-
-.elMargin0 {
-  margin-top: 0;
-}
-
-.elHeadline {
-  margin-bottom: 0;
-  padding: 0;
-  position: relative;
-}
-
-.hsSize1 {
-  font-size: 16px;
-}
-
-.hsSize2 {
-  font-size: 24px;
-}
-
-.hsSize3 {
-  font-size: 32px;
-}
-
-.lh4 {
-  line-height: 1.3em;
-}
-
-.lh3 {
-  line-height: normal;
-}
-
-.el_media_theme1 {
-  background-color: #fff;
-  border: 2px solid rgba(0, 0, 0, .15);
-}
-
-.elDivider {
-  margin: 0;
-  width: 100%;
-}
-
-.elDivider, .elDividerInner {
-  min-height: 1px;
-}
-
-.elDivider {
-  display: block;
-}
-
-.elInput {
-  appearance: none;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 770px) {
-  .closeLPModal {
-    right: -6px;
-  }
-
-  .midContainer,   .wideContainer {
-    min-width: 320px;
-  }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 720px) {
-  .midContainer {
-    min-width: 320px;
-  }
-}
-
-.fa, .fas {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-variant: normal;
-  font-variant-position: normal;
-  line-height: 1;
-  text-rendering: auto;
-}
-
-.fa, .fas {
-  font-family: "Font Awesome 5 Free";
-}
-
-.fa, .fas {
-  font-weight: 900;
-}
-
-a:active, a:hover {
-  outline: 0;
-}
-
-a:focus, a:hover {
-  text-decoration: underline;
-}
-
-a:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-.container::after, .container::before, .row::after, .row::before {
-  content: " ";
-  display: table;
-}
-
-.container::after, .row::after {
-  clear: both;
-}
-
-.de-image-block img {
-  box-sizing: border-box;
-  max-width: 100%;
-}
-
-.elDivider::after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
-
-.fa-angle-double-down::before {
-  content: "";
-}
-
-.fa-hand-point-right::before {
-  content: "";
-}
-
-.fa-plus::before {
-  content: "";
-}
-
-.midContainer .containerInner, .wideContainer .containerInner {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.midContainer.containerModal {
-  margin-left: -360px;
-}
+/* Other styles can continue... */
 
-.elDivider:not([class*=padding]) {
-  padding: 10px 0;
-}
-
-.elDividerStyle1 .elDividerInner {
-  border-top-style: solid;
-  border-top-width: 1px;
-}
-
-.elDividerInner[data-align=left] {
-  float: left;
-}
-
-.elDividerInner[data-width-border="50"] {
-  width: 50%;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 770px) {
-  .midContainer.containerModal {
-    margin-left: -320px;
-  }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 720px) {
-  .midContainer.containerModal {
-    margin-left: -320px;
-  }
-}
-
-.elHeadlineWrapper .elHeadline span {
-  padding: 0;
-}
-
-.de-editable {
-  cursor: auto !important;
-}
-
-.hide {
-  display: none !important;
-}
 
-.noBorder {
-  border: initial !important;
-  border-color: initial !important;
-  border-image: initial initial initial initial initial !important;
+/* Profile image with border */
+.profile-image {
+  border: 2px solid #ccc; /* Light grey border, adjust color as needed */
+  border-radius: 50%; /* Circular image */
+  padding: 4px; /* Adjust padding as needed */
 }
 
-.bgNoRepeat {
-  background-repeat: no-repeat !important;
+/* Separator line */
+.separator-line {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); /* Gradient line */
+  margin: 20px 0; /* Spacing above and below the line */
 }
 
-.bgCover {
-  background-attachment: fixed !important;
-  background-repeat: repeat !important;
-  background-size: cover !important;
+.content-area {
+    margin: 0 auto;
+    max-width: 800px; /* Adjust as needed for proper margin */
+    padding: 20px;
+    text-align: left;
 }
 
-.containerModal {
-  overflow: visible !important;
+#profile-image {
+    max-width: 150px; /* Adjust as needed for the smaller image */
+    border-radius: 50%;
+    cursor: pointer; /* If you want it to be clickable */
 }
 
-.el_media_theme1 {
-  padding: 5px !important;
+#profile-image.expanded {
+    max-width: 300px; /* Adjust as needed for the expanded image */
 }
 
-.elInput {
-  outline: 0 !important;
+.html-arrow {
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 770px) {
-  .wideContainer {
-    width: 100% !important;
-  }
-
-  .col-inner {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  .innerContent {
-    padding: 0 !important;
-  }
-
-  .row {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
-
-  .col_right {
-    margin-top: 20px !important;
-  }
-
-  .containerModal {
-    left: 0 !important;
-    margin-left: 0 !important;
-  }
-
-  .containerInner {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .col-inner,   .row {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: auto !important;
-  }
-
-  .elHeadlineWrapper {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .bgCover {
-    background-attachment: scroll !important;
-  }
-}
-
-@media only screen and (min-width: 770px) and (max-width: 1170px) {
-  .col-inner {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .mfs_17 {
-    font-size: 17px !important;
-  }
-
-  .mfs_23 {
-    font-size: 23px !important;
-  }
-
-  .mfs_32 {
-    font-size: 32px !important;
-  }
+.footer-area {
+    margin: 0 auto;
+    max-width: 900px; /* Adjust for a wider footer */
+    padding: 20px;
 }
 
-@media only screen and (min-width: 650px) and (max-width: 720px) {
-  .midContainer {
-    width: 100% !important;
-  }
+.footer-area ul {
+    list-style: none;
+    padding-left: 0; /* Removes default padding */
 }
 
-.ximg.img-circle {
-  border-radius: 50% !important;
+.footer-area li {
+    /* Styles for list items */
 }
 
-@media only screen and (min-width: 0px) and (max-width: 770px) {
-  .midContainer.containerModal {
-    width: 100% !important;
-  }
-}
+@media (max-width: 768px) {
+    .content-area, .footer-area {
+        padding: 20px 10px; /* Adjusts padding for mobile */
+    }
 
-.elHeadlineWrapper[data-htype=headline] {
-  font-family: Raleway, Helvetica, sans-serif !important;
-}
+    #profile-image {
+        width: 100px; /* Smaller image for mobile */
+    }
 
-#tmp_imagegallery-22450 {
-  text-align: left !important;
+    #profile-image.expanded {
+        max-width: 200px; /* Adjust as needed for expanded image on mobile */
+    }
 }

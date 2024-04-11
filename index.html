@@ -4,86 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nick Calabro</title>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    background: #f0f0f0;
-  }
-  .content {
-    width: 80%;
-    max-width: 600px;
-    margin: 20px;
-    text-align: left;
-  }
-  .profile-image {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  h1, h2, p {
-    margin: 0;
-    padding: 0;
-  }
-  h1 {
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  .footer {
-    width: 90%;
-    text-align: left;
-    margin-top: 20px;
-  }
-  .social-links {
-    list-style: none;
-    padding: 0;
-  }
-  .social-links li {
-    display: inline;
-    margin-right: 10px;
-  }
-</style>
-<script>
-  function toggleImageSize(img) {
-    img.classList.toggle('expanded');
-  }
-</script>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="content">
-  <img src="nickpic.jpg" alt="Nick Calabro" class="profile-image" onclick="toggleImageSize(this)">
-  <h1>Nick Calabro 💰</h1>
-  <h2>Bitcoin • DeFi • Growth</h2>
-  <hr>
-  <p>Accelerating Bitcoin startups with fast, high-signal growth strategies.</p>
-  <p>Prev Co-Founder @ Deep Lake—Unlocked native Bitcoin in Smart Contracts through DLCs (BFF '23).</p>
-  <p>Prev Head of Growth @ Mimo—a stablecoin issuance protocol.</p>
-  <p>Sales & Marketing • $50m+ in profitable spend</p>
-  <p>Occasionally crashing podcasts.</p>
-  <span class="html-arrow">↓</span>
+<div class="content-area">
+    <img src="nickpic.jpg" alt="Nick Calabro" id="profile-image" class="profile-image">
+    <h1>Nick Calabro 💰</h1>
+    <h2>Bitcoin • DeFi • Growth</h2>
+
+    <hr class="separator-line">
+
+    <p>Accelerating Bitcoin startups with fast, high-signal growth strategies.</p>
+    <p>Prev Co-Founder @ <a href="https://deeplake.finance/">Deep Lake</a>—Unlocked native Bitcoin in Smart Contracts through DLCs (BFF '23).</p>
+    <p>Prev Head of Growth @ <a href="https://mimo.capital/">Mimo</a>—a stablecoin issuance protocol.</p>
+    <p>Sales & Marketing • $50m+ in profitable spend</p>
+    <p>Occasionally crashing <a href="https://www.podchaser.com/creators/nick-calabro-107ZzndWDR">podcasts</a>.</p>
+    
+
+    <div class="html-arrow">&#x25BC;</div>
 </div>
 
-<div class="footer">
-  <ul class="social-links">
-    <li><a href="https://youtube.com/NickCalabro">YouTube</a></li>
-    <li><a href="https://linkedin.com/in/NickCalabro">LinkedIn</a></li>
-    <li><a href="https://github.com/NickCalabro">GitHub</a></li>
-    <li><a href="https://tiktok.com/@NickCalabro">TikTok</a></li>
-    <li><a href="https://sigle.io/NickCalabro">Sigle</a></li>
-  </ul>
-</div>
+<footer class="footer-area">
+    <h3>Nick.finance</h3>
+    <ul>
+        <li a href="http://bit.ly/WatchNickCalabs">YouTube</li>
+        <li a href="http://linkedin.com/in/nickcalabro">LinkedIn</li>
+        <li a href="https://github.com/nickcalabs/">Github</li>
+        <li a href="https://www.tiktok.com/@nickcalabs">TikTok</li>
+        <li a href="https://www.facebook.com/nickcalabs">Meta</li>
+        <li a href="https://app.sigle.io/stablesir.btc">Sigle</li>
+        <li a href="https://twitter.com/nickcalabs">X</li>
+    </ul>
+</footer>
+
+<script>
+// If you decide to make the image clickable to expand
+document.getElementById('profile-image').onclick = function() {
+    this.classList.toggle('expanded');
+};
+</script>
 
 </body>
 </html>

@@ -1,43 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick Calabro</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nick Calabro</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f0f0f0;
+  }
+  .content {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+    text-align: left;
+  }
+  .profile-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .footer {
+    width: 90%;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  .social-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+</style>
+<script>
+  function toggleImageSize(img) {
+    img.classList.toggle('expanded');
+  }
+</script>
 </head>
-<body class="inherited-styles-for-exported-element">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 innerContent">
-                <img src="nickpic.jpg" alt="Nick Calabro" class="el_media_theme1 ximg img-circle">
-                <h1 class="hsSize3">Nick Calabro 💰</h1>
-                <h2 class="hsSize2">Bitcoin • DeFi • Growth</h2>
-                <p>Accelerating Bitcoin startups with fast, high-signal growth strategies.</p>
-                <p>Prev Co-Founder @ Deep Lake—Unlocked native Bitcoin in Smart Contracts through DLCs (BFF '23).</p>
-                <p>Prev Head of Growth @ Mimo—a stablecoin issuance protocol.</p>
-                <p>Sales & Marketing • $50m+ in profitable spend</p>
-                <p>Occasionally crashing podcasts.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="elDivider elDividerStyle1 padding10-top padding10-bottom">
-                    <div class="elDividerInner" data-align="left" data-width-border="50"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <a href="your-youtube-link">YouTube</a>
-                <a href="your-linkedin-link">LinkedIn</a>
-                <a href="your-github-link">GitHub</a>
-                <a href="your-tiktok-link">TikTok</a>
-                <a href="your-meta-link">Meta</a>
-                <a href="your-sigle-link">Sigle</a>
-                <a href="your-twitter-link">X</a>
-            </div>
-        </div>
-    </div>
+<body>
+
+<div class="content">
+  <img src="nickpic.jpg" alt="Nick Calabro" class="profile-image" onclick="toggleImageSize(this)">
+  <h1>Nick Calabro 💰</h1>
+  <h2>Bitcoin • DeFi • Growth</h2>
+  <hr>
+  <p>Accelerating Bitcoin startups with fast, high-signal growth strategies.</p>
+  <p>Prev Co-Founder @ Deep Lake—Unlocked native Bitcoin in Smart Contracts through DLCs (BFF '23).</p>
+  <p>Prev Head of Growth @ Mimo—a stablecoin issuance protocol.</p>
+  <p>Sales & Marketing • $50m+ in profitable spend</p>
+  <p>Occasionally crashing podcasts.</p>
+  <span class="html-arrow">↓</span>
+</div>
+
+<div class="footer">
+  <ul class="social-links">
+    <li><a href="https://youtube.com/NickCalabro">YouTube</a></li>
+    <li><a href="https://linkedin.com/in/NickCalabro">LinkedIn</a></li>
+    <li><a href="https://github.com/NickCalabro">GitHub</a></li>
+    <li><a href="https://tiktok.com/@NickCalabro">TikTok</a></li>
+    <li><a href="https://sigle.io/NickCalabro">Sigle</a></li>
+  </ul>
+</div>
+
 </body>
 </html>
